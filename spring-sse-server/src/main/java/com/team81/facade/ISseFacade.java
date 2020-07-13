@@ -7,5 +7,5 @@ import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
  */
 public interface ISseFacade {
 
-    void test(SseEmitter sseEmitter);
+    void example(SseEmitter sseEmitter);
 }

@@ -30,6 +30,7 @@
 	</build>
 
 	<modules>
+		<module>spring-sse-common</module>
 		<module>spring-sse-client</module>
 		<module>spring-sse-server</module>
 	</modules>

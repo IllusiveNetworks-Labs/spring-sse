@@ -30,7 +30,7 @@ public class PageRestClient implements IPageRestClient {
 
     private static final Logger logger = LoggerFactory.getLogger(PageRestClient.class);
 
-    private ExecutorService executorService = Executors.newFixedThreadPool(10);
+    private final ExecutorService executorService = Executors.newFixedThreadPool(10);
 
     private final URI baseUri;
 

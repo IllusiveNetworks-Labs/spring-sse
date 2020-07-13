@@ -12,7 +12,7 @@
 	<artifactId>spring-sse-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>spring-sse-server</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Example project for SSE server using Spring Boot</description>
 
 	<properties>
 		<java.version>11</java.version>
@@ -26,6 +26,11 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-webflux</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.team81</groupId>
+			<artifactId>spring-sse-common</artifactId>
+			<version>${project.version}</version>
 		</dependency>
 
 		<dependency>

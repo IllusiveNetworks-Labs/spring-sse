@@ -1,12 +1,12 @@
 package com.team81.facade.impl;
 
+import com.team81.Response;
 import com.team81.facade.ISseFacade;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
 import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
 
 import java.io.IOException;
-import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -17,15 +17,15 @@ import java.util.concurrent.Executors;
 public class SseFacade implements ISseFacade {
 
     @Override
-    public void test(SseEmitter sseEmitter) {
+    public void example(SseEmitter sseEmitter) {
         ExecutorService executor = Executors.newSingleThreadExecutor();
         executor.submit(() -> {
             for (int i = 0; i < 100; ++i) {
                 try {
-                    sseEmitter.send(String.format("test: %d", i), MediaType.APPLICATION_JSON);
+                    sseEmitter.send(new Response(i, "test"), MediaType.APPLICATION_JSON);
                     Thread.sleep(1000);
                 } catch (IOException | InterruptedException e) {
-                    throw new RuntimeException(String.format("Failed to send test: %d", i));
+                    throw new IllegalStateException(String.format("Failed to send test: %d", i));
                 }
             }
         });
