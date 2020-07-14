@@ -1,7 +1,6 @@
 package com.team81.client.impl;
 
 import com.team81.client.IPageRestClient;
-import com.team81.client.Protocol;
 import org.apache.commons.lang.Validate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -34,19 +33,10 @@ public class PageRestClient implements IPageRestClient {
 
     private final URI baseUri;
 
-    public PageRestClient(Protocol protocol,
-                          String hostName,
-                          int port) {
-        Validate.notNull(protocol);
-        Validate.notEmpty(hostName);
-        Validate.isTrue(port >= 0);
+    public PageRestClient(URI uri) {
+        Validate.notNull(uri);
 
-        baseUri = UriComponentsBuilder.newInstance()
-                .scheme(protocol.getValue())
-                .host(hostName)
-                .port(port)
-                .build()
-                .toUri();
+        baseUri = uri;
     }
 
     @Override
