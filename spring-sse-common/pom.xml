@@ -8,29 +8,24 @@
 		<version>2.3.1.RELEASE</version>
 	</parent>
 	<groupId>illusive.networks</groupId>
-	<artifactId>spring-sse</artifactId>
+	<artifactId>spring-sse-common</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-sse</name>
-	<packaging>pom</packaging>
-	<description>Demo project for Spring Boot</description>
+	<name>spring-sse-common</name>
 
 	<properties>
 		<java.version>11</java.version>
 	</properties>
 
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
+	</dependencies>
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
-
-	<modules>
-		<module>spring-sse-common</module>
-		<module>spring-sse-client</module>
-		<module>spring-sse-server</module>
-	</modules>
 </project>
