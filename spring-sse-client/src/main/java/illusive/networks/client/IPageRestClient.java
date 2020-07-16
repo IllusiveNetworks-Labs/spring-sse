@@ -1,4 +1,4 @@
-package com.team81.client;
+package illusive.networks.client;
 
 import org.springframework.core.ParameterizedTypeReference;
 

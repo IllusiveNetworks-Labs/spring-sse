@@ -1,6 +1,6 @@
-package com.team81.client.impl;
+package illusive.networks.client.impl;
 
-import com.team81.client.IPageRestClient;
+import illusive.networks.client.IPageRestClient;
 import org.apache.commons.lang.Validate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

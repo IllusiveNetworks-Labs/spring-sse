@@ -1,10 +1,10 @@
-package com.team81.controller;
+package illusive.networks.controller;
 
-import com.team81.RequestBody;
-import com.team81.Response;
-import com.team81.client.IPageRestClient;
-import com.team81.client.IPagedRestClientFactory;
-import com.team81.client.Protocol;
+import illusive.networks.RequestBody;
+import illusive.networks.Response;
+import illusive.networks.client.IPageRestClient;
+import illusive.networks.client.IPagedRestClientFactory;
+import illusive.networks.client.Protocol;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

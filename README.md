@@ -1,5 +1,5 @@
 # spring-sse
-This project is an example of how to use SSE (Server-Sent-Events) between a server to server.
+This project is an example of how to use SSE (Server-Sent-Events) between a java to java service.
 This can be used for example to communicate between two services, within an asynchronous manner.
 
 The project contains two sub-projects:

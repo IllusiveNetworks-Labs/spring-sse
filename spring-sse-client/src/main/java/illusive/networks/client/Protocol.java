@@ -1,4 +1,4 @@
-package com.team81.client;
+package illusive.networks.client;
 
 /**
  * Created by alon on 7/13/2020.

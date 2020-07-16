@@ -1,4 +1,4 @@
-package com.team81.client.impl;
+package illusive.networks.client.impl;
 
 import org.reactivestreams.Subscriber;
 import org.reactivestreams.Subscription;

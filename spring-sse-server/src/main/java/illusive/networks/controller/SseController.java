@@ -1,6 +1,6 @@
-package com.team81.controller;
+package illusive.networks.controller;
 
-import com.team81.facade.ISseFacade;
+import illusive.networks.facade.ISseFacade;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -26,7 +26,7 @@ public class SseController {
     @PostMapping("/example")
     public
     @ResponseBody
-    SseEmitter example(@RequestBody com.team81.RequestBody requestBody) {
+    SseEmitter example(@RequestBody illusive.networks.RequestBody requestBody) {
         System.out.println(String.format("got request with body: %s", requestBody));
         SseEmitter sseEmitter = new SseEmitter();
         sseFacade.example(sseEmitter);

@@ -1,4 +1,4 @@
-package com.team81;
+package illusive.networks;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,8 +10,8 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class RequestBody {
+public class Response {
 
-    private String body;
-
+    private int id;
+    private String response;
 }

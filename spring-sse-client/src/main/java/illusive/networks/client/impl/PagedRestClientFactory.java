@@ -1,7 +1,7 @@
-package com.team81.client.impl;
+package illusive.networks.client.impl;
 
-import com.team81.client.IPageRestClient;
-import com.team81.client.IPagedRestClientFactory;
+import illusive.networks.client.IPageRestClient;
+import illusive.networks.client.IPagedRestClientFactory;
 import org.springframework.beans.factory.annotation.Lookup;
 import org.springframework.stereotype.Component;
 
